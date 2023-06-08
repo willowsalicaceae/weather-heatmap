@@ -1,0 +1,56 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Final Deliverable</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div id="main">
+    <div id="controls" class="flex-container">
+      <fieldset id="dataset" class="flex-item">
+        <legend>Location</legend>
+        <input type="radio" id="CLT" name="dataset" value="data/CLT.csv" checked>
+        <label for="CLT">Charlotte, North Carolina</label><br>
+        <input type="radio" id="CQT" name="dataset" value="data/CQT.csv">
+        <label for="CQT">Los Angeles, California</label><br>
+        <input type="radio" id="IND" name="dataset" value="data/IND.csv">
+        <label for="IND">Indianapolis, Indiana</option><br>
+        <input type="radio" id="JAX" name="dataset" value="data/JAX.csv">
+        <label for="JAX">Jacksonville, Florida</label><br>
+        <input type="radio" id="MDW" name="dataset" value="data/MDW.csv">
+        <label for="MDW">Chicago, Illinois</label><br>
+        <input type="radio" id="PHL" name="dataset" value="data/PHL.csv">
+        <label for="PHL">Philadelphia, Pennsylvania</label><br>
+        <input type="radio" id="PHX" name="dataset" value="data/PHX.csv">
+        <label for="PHX">Pheonix, Arizona</label><br>
+      </fieldset>
+      <div class="flex-item column">
+        <fieldset id="opacity">
+          <legend>Highlight</legend>
+          <input type="radio" id="none" name="opacity" value="none" checked>
+          <label for="none">None</label><br>
+          <input type="radio" id="max" name="opacity" value="min">
+          <label for="max">Min temp difference</label><br>
+          <input type="radio" id="min" name="opacity" value="max">
+          <label for="min">Max temp difference</label>
+        </fieldset>
+        <fieldset id="view">
+          <legend>View</legend>
+          <input type="radio" id="temp" name="view" value="temp" checked>
+          <label for="temp">Temperature</label><br>
+          <input type="radio" id="prec" name="view" value="prec">
+          <label for="prec">Precipitation</label><br>
+        </fieldset>
+      </div>
+    </div>
+    <svg width="1404" height="182">
+    </svg>
+  </div>
+</body>
+<script src="//d3js.org/d3.v5.min.js"></script>
+<script src="./main.js"></script>
+</html>

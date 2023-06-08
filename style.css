@@ -1,0 +1,49 @@
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+.tooltip {
+  position: absolute;
+  text-align: center;
+  width: 128px;
+  height: 96px;
+  padding: 4px;
+  font-size: 12px;
+  background: #fff;
+  border: 1px solid gray;
+  border-radius: 0px 8px 8px 8px;
+  pointer-events: none;
+}
+
+.higher {
+  color: #30bf30;
+}
+
+.lower {
+  color: #bf3030;
+}
+
+.same {
+  color: #828282;
+}
+
+table {
+  width: 100%;
+}
+
+svg {
+  border: 1px solid #a0a0a0;
+  margin: 4px 2px;
+  padding: 8px;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
